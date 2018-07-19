@@ -55,6 +55,7 @@ void matrisYazdir(float** A)
 	{
 		for (int j = 0; j < n; j++)
 		{
+			//setw fonksiyonu ekrana yazdırılacak matris değeri için 10 birimlik alan ayırır
 			cout << setw(10) << A[i][j] << " ";
 		}
 		cout << endl << endl;
@@ -148,7 +149,6 @@ int main()
 {
 	cout << fixed;
 	cout << setprecision(2);
-
 	float** A = matrisOku();
 	cout << "Girlen matris : " << endl;
 	matrisYazdir(A);
